@@ -1,0 +1,197 @@
+.intro-container {
+  position: relative;
+  height: 100vh;
+}
+
+.videoIntro {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.infoIntro {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 1;
+  color: #fff;
+}
+
+.btnVolume {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2; /* Đảm bảo nút âm lượng nằm trên cùng */
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+.fadeBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7), #111);
+}
+
+.arrow {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arrow-icon {
+  font-size: 20px;
+  color: #000;
+}
+
+.arrow-left {
+  left: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+.arrow-right {
+  right: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+.arrow:hover {
+  background-color: #1890ff;
+}
+
+.arrow:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.custom-card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.custom-card img {
+  border-bottom: 2px solid #ddd;
+  width: 100%;
+}
+
+.card-wrapper {
+  padding: 0 10px;
+}
+
+.products-name {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 3; /* Đảm bảo mũi tên điều hướng nằm trên cùng */
+}
+
+
+
+/* App.css */
+
+/* Khi hover vào một Card, giảm opacity của movie-slider */
+.products-container .ant-card:hover ~ .movie-slider {
+  opacity: 0.5;
+}
+
+/* Đảm bảo movie-slider có opacity 1 khi không hover */
+.movie-slider {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Giữ nguyên opacity của thẻ Card khi hover */
+.products-container .ant-card:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products-container .ant-card {
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  position: relative; /* Ensure the z-index takes effect */
+}
+
+.products-container .ant-card:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.products-container .ant-card {
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  z-index: 1;
+}
+
+.products-container .ant-card:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.ant-card-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  color: white;
+  text-align: center;
+}
+
+.writen{
+  font-size: 14px;
+  text-align: center;
+  padding: 4px;
+  margin: 0px;
+}
+.img{
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+:where(.css-dev-only-do-not-override-j9bb5n).ant-card .ant-card-body {
+  padding: 0;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Home.css */
+.movie-slider {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.products-container .ant-card {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.products-container .ant-card:hover {
+  opacity: 1;
+}
+
+.products-container .ant-card:hover ~ .movie-slider {
+  opacity: 0.5;
+}

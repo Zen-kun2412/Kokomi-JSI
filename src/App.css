@@ -1,38 +1,112 @@
-.App {
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+.intro {
   text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.products-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+  /* &:hover{
+    transform: scale(1.2);
+  } */
+}
+.products-name{
+  margin: 20px;
+}
+/* App.css */
+
+/* Tổng thể */
+body {
+  background-color: #1c1c1c !important;
+  color: #e0e0e0 !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
-.App-link {
-  color: #61dafb;
+/* Tiêu đề phim */
+.products-name {
+  color: #ffffff !important;
+  font-size: 24px !important;
+  letter-spacing: 1.5px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Vùng chứa phim */
+.products-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 20px !important;
 }
+
+/* Card Ant Design */
+.ant-card {
+  background-color: #101010 !important;
+  border: 1px solid #333 !important;
+  color: #fff !important;
+}
+
+.ant-card-hoverable:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1) !important;
+}
+
+.ant-card-meta-title, .ant-card-meta-description {
+  color: #e0e0e0 !important;
+}
+
+
+.btnVolume:hover {
+  color: #c0c0c0 !important;
+}
+
+
+footer {
+  background-color: #2b2b2b !important;
+  color: #ffffff !important;
+  padding: 40px 0 !important;
+}
+
+footer a {
+  color: #e0e0e0 !important;
+}
+
+footer a:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+footer .font-weight-bold {
+  color: #ffffff !important;
+}
+
+footer .btn-outline-light {
+  border-color: #ffffff !important;
+}
+
+footer .btn-outline-light:hover {
+  background-color: #ffffff !important;
+  color: #000 !important;
+}
+
+/* Contact Icons */
+footer .mr-3 {
+  margin-right: 15px !important;
+}
+

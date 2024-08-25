@@ -1,0 +1,137 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/backgroudweb.jpg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container-from {
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 400px;
+    position: relative;
+  }
+  
+  .login-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-header h2 {
+    font-size: 2rem;
+    color: #000;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .submit-button,
+  .google-button {
+    margin: 0 5px;
+  }
+  
+  
+  .remember-forgot-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password {
+    color: #1890ff;
+    text-decoration: none;
+    margin-left: 80px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-button {
+    margin: 0 5px;
+  }
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-link a {
+    color: #1890ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+.social-button {
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0 5px;
+  }
+  
+  .social-button .anticon {
+    font-size: 20px;
+  }
+  
+  .input-no-border {
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+  }
+  
+  .input-no-border:focus {
+    box-shadow: none;
+    border-color: #40a9ff;
+  }
+
+  .register-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-text {
+    text-align: center;
+    color: #333;
+  }
+  
+  .register-link-text {
+    color: #1890ff !important ;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-link-text:hover {
+    text-decoration: underline;
+  }

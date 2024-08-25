@@ -1,0 +1,197 @@
+.header-taskbar {
+  background-color: #000;
+  color: white;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in, padding 0.3s ease-in;
+}
+
+.search-container.active .search-wrapper {
+  border-color: #fff;
+  padding: 0 10px;
+}
+
+.animated-input {
+  font-size: 14px;
+  border: none;
+  color: white;
+  outline: none;
+  width: 0;
+  padding: 8px 12px;
+  cursor: pointer;
+  opacity: 0;
+  background: #222;
+  transition: width 0.5s ease-in, opacity 0.3s ease-in;
+}
+
+.animated-input:focus {
+  padding-left: 15px;
+  width: 250px;
+  cursor: text;
+  opacity: 1;
+  background: #000;
+  color: white;
+  outline: none;
+}
+
+.animated-input:hover {
+  background: #000;
+}
+
+.search-icon {
+  color: white;
+  font-size: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+}
+
+.search-icon:hover {
+  color: #ccc;
+}
+
+.ant-layout-header {
+  background-color: #000;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+span :hover{
+  color: lightskyblue;
+}
+
+.ant-menu-overflow {
+  background-color: #000;
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1a1a1a; /* Màu nền xám đậm hơn */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 60px; /* Kích thước lớn hơn một chút */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-size: 28px; /* Kích thước icon lớn hơn */
+  z-index: 9999;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(145deg, #1a1a1a, #333); /* Gradient background */
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+}
+
+.scroll-to-top:hover {
+  background-color: #333;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Bóng đổ mạnh hơn */
+}
+
+.scroll-to-top:active {
+  background-color: #444;
+  transform: scale(1.05); /* Tạo hiệu ứng thu nhỏ nhẹ khi nhấn */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ nhẹ hơn khi nhấn */
+}
+
+
+.header-taskbar {
+  background-color: #000;
+  padding: 0 20px;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-taskbar img {
+  height: 50px;
+}
+
+.ant-menu-dark.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-menu-item {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ant-menu-item:hover {
+  background-color: #333;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  width: 100px;
+}
+
+.search-container.active {
+  width: 200px;
+}
+
+.search-icon {
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.search-icon:hover {
+  transform: scale(1.1);
+}
+
+.animated-input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  width: 100%;
+  outline: none;
+  padding-left: 5px;
+  transition: width 0.3s ease;
+}
+
+.animated-input::placeholder {
+  color: #ccc;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .header-taskbar {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .search-container {
+      width: 100%;
+  }
+
+  .search-wrapper {
+      width: 100%;
+  }
+
+}
+
